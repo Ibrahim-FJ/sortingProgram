@@ -5,29 +5,6 @@ fun main (){
     val number3 = readLine()!!.toFloat()
 
 
-//    if (smallest > number2){
-//        smallest = number2
-//    }
-//    if (smallest >= number3){
-//        smallest = number3
-//    }
-
-
-//    if(biggest < number2){
-//        biggest = number2
-//    }
-//    if(biggest <= number3){
-//        biggest = number3
-//    }
-
-//    if (number1 < biggest && number1 > smallest){
-//        mid = number1
-//    }else if (number2 < biggest && number2 > smallest){
-//        mid = number2
-//    }else{
-//        mid = number3
-//    }
-
         val smallest = getSmallest(number1, number2, number3)
         val biggest = getBiggest(number1, number2, number3)
         val mid = getMid(number1, number2, number3, smallest, biggest)
