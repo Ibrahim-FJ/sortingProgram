@@ -25,6 +25,7 @@ fun sort(number1: Float, number2: Float, number3: Float){
 
 
 
+
 fun getSmallest(number1 : Float, number2 : Float, number3: Float) : Float{
     var smallest : Float = number1
     if (smallest > number2){
