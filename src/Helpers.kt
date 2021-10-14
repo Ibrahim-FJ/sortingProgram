@@ -49,16 +49,16 @@ fun getBiggest(number1 : Float, number2 : Float, number3: Float) : Float{
 }
 
 fun getMid1(number1 : Float, number2 : Float, number3: Float) : Float{
-    var mid : Float ?= null
+
     val smallest = getSmallest(number1, number2, number3)
     val biggest = getBiggest(number1, number2,number3 )
 
-    if (number1 < biggest && number1 > smallest){
-        mid = number1
+    val mid = if (number1 < biggest && number1 > smallest){
+        number1
     }else if (number2 < biggest && number2 > smallest){
-        mid = number2
+        number2
     }else{
-        mid = number3
+        number3
     }
     return mid
 }
@@ -66,13 +66,13 @@ fun getMid2 (number1 : Float, number2 : Float, number3: Float) : Float{
  val smallest = getSmallest(number1, number2, number3)
     val biggest = getBiggest(number1, number2,number3 )
 
-    var mid : Float ?= null
-    if (number1 < biggest && number1 > smallest){
-        mid = number1
+   // var mid : Float ?= null
+    val mid = if (number1 < biggest && number1 > smallest){
+        number1
     }else if (number2 < biggest && number2 > smallest){
-        mid = number2
+        number2
     }else{
-        mid = number3
+        number3
     }
     return mid
 }
