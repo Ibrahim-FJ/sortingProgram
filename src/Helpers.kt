@@ -1,19 +1,21 @@
 
 fun sort(number1: Float, number2: Float, number3: Float){
 
-    println("Please enter true or false")
-    val easyMid = readLine()!!.toBoolean()
+    println("Enter 1 letter or 2 letter to use which function")
+    val easyMid = readLine()!!.toInt()
     val smallest = getSmallest(number1, number2, number3)
     val biggest = getBiggest(number1, number2, number3)
 
-    if (easyMid) {
+    if (easyMid == 1) {
 
         val mid = getMid1(number1, number2, number3)
         println("Mid from 1st mid\n$smallest\n$mid\n$biggest")
-    }else{
+    }else if(easyMid == 2){
 
         val mid = getMid2(number1, number2, number3)
-        println("Mid from 2st mid\n$smallest\n$mid\n$biggest")
+        println("Mid from 2nd mid\n$smallest\n$mid\n$biggest")
+    }else{
+        println("Wrong Input")
     }
 
 
