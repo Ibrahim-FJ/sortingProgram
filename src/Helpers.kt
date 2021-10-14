@@ -1,7 +1,7 @@
 
 fun sort(number1: Float, number2: Float, number3: Float){
 
-    println("Enter true || false to use which function")
+    println("Enter true or false")
     val easyMid = readLine()!!.toBoolean()
     val smallest = getSmallest(number1, number2, number3)
     val biggest = getBiggest(number1, number2, number3)
